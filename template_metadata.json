@@ -1,0 +1,6 @@
+{
+  "name": "BINGO #$token_id",
+  "description": "Bingo",
+  "image": "$image",
+  "animation_url": "$animation_url"
+}
