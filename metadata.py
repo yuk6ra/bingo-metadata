@@ -37,7 +37,7 @@ def create_metadata(token_id, image, animation_url):
     data = {
         "token_id": token_id,
         "image": f"ipfs://{image}/",
-        "animation_url": f"ipfs://{animation_url}/{token_id}",
+        "animation_url": f"ipfs://{animation_url}/{token_id}.html",
     }
 
     return data
