@@ -48,7 +48,7 @@ def create_bingo():
         elif column == "N":
             while len(n) <= 5:
                 if len(n) == 2:
-                    n.append("Free Space")
+                    n.append("FREE")
                     continue
                 rand = random.randint(31, 45)
                 if not rand in n:
