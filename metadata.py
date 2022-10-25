@@ -4,11 +4,10 @@ import string
 
 
 MAIN_PATH = f'./'
-DATA_FOLDER_NAME = "output_metadata"
-
+DATA_FOLDER_NAME = "metadata"
 SAVE_DATA_PATH = f'{MAIN_PATH}/{DATA_FOLDER_NAME}'
 
-SUPPLY = 10
+SUPPLY = 100
 IMAGE_CID = "QmXvb8iSGeXUVSSxQaBDmwwT2EwVtDTjWiMQWPNXKjKKUj"
 ANIMATION_CID = "QmQyUkK3K7rqt5VrdGeQmfgszFX5bfyo83pymeSi2JnKHa"
 
@@ -19,7 +18,7 @@ def main():
     supply = SUPPLY
     image = IMAGE_CID
     animation_url = ANIMATION_CID
-    for token_id in range(supply):
+    for token_id in range(1, supply+1):
         metadata = create_metadata(token_id, image, animation_url)
         output(metadata, token_id)
 
@@ -36,8 +35,10 @@ def create_metadata(token_id, image, animation_url):
 
     data = {
         "token_id": token_id,
-        "image": f"ipfs://{image}/",
-        "animation_url": f"ipfs://{animation_url}/{token_id}.html",
+        # "image": f"ipfs://{image}/",
+        "image": f"https://bingo.yuk6ra.com/assets/bingo.png",
+        # "animation_url": f"ipfs://{animation_url}/{token_id}.html",
+        "animation_url": f"https://bingo.yuk6ra.com/metadata/{token_id}.html",
     }
 
     return data
@@ -45,3 +46,5 @@ def create_metadata(token_id, image, animation_url):
 
 if __name__ == '__main__':
     main()
+
+    

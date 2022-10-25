@@ -4,16 +4,17 @@ import string
 
 
 MAIN_PATH = f'./'
-DATA_FOLDER_NAME = "output_bingo"
+DATA_FOLDER_NAME = "bingo"
 
 SAVE_DATA_PATH = f'{MAIN_PATH}/{DATA_FOLDER_NAME}'
 
-SUPPLY = 10
+SUPPLY = 100
 
 def main():
     # supply = int(input("supply: "))
     supply = SUPPLY
-    for token_id in range(supply):
+    for token_id in range(1,supply+1):
+        print(token_id)
         data = create_bingo()
         output(data, token_id)
 
