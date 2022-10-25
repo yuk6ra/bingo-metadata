@@ -4,39 +4,39 @@
         <table id="bingo">
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>24</td>
-                    <td>35</td>
-                    <td>51</td>
-                    <td>63</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>16</td>
-                    <td>31</td>
-                    <td>59</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>30</td>
-                    <td>FREE</td>
-                    <td>55</td>
-                    <td>61</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>17</td>
+                    <td>5</td>
+                    <td>26</td>
                     <td>34</td>
-                    <td>46</td>
-                    <td>70</td>
-                 </tr>
+                    <td>54</td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>18</td>
+                    <td>31</td>
+                    <td>51</td>
+                    <td>72</td>
+                </tr>
                 <tr>
                     <td>6</td>
-                    <td>22</td>
-                    <td>38</td>
-                    <td>52</td>
-                    <td>64</td>
+                    <td>29</td>
+                    <td id="center">FREE</td>
+                    <td>55</td>
+                    <td>71</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>17</td>
+                    <td>45</td>
+                    <td>58</td>
+                    <td>61</td>
+                 </tr>
+                <tr>
+                    <td>9</td>
+                    <td>19</td>
+                    <td>33</td>
+                    <td>47</td>
+                    <td>62</td>
                  </tr>
             </tbody>
         </table>
@@ -62,7 +62,7 @@
         }
 
         #bingo{
-            width: 25rem;
+            /*width: 25rem;*/
             margin: 0 auto;
             font-size: 1.5rem;
             border-collapse: separate;
@@ -81,11 +81,15 @@
         }
 
         #bingo td {
-            width: 3rem;
-            height: 4rem;
+            width: 3.5rem;
+            height: 3.5rem;
             color: #fff;
             background-color: #FF6600;
             border-radius: 50% 50% 0 0;
+        }
+
+        #center {
+            font-size: 1rem;
         }
 
         #bingo td.check {

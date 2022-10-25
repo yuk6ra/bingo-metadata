@@ -20,7 +20,7 @@
                 <tr>
                     <td>$b2</td>
                     <td>$i2</td>
-                    <td>$n2</td>
+                    <td id="center">$n2</td>
                     <td>$g2</td>
                     <td>$o2</td>
                 </tr>
@@ -62,7 +62,7 @@
         }
 
         #bingo{
-            width: 25rem;
+            /*width: 25rem;*/
             margin: 0 auto;
             font-size: 1.5rem;
             border-collapse: separate;
@@ -81,11 +81,15 @@
         }
 
         #bingo td {
-            width: 3rem;
-            height: 4rem;
+            width: 3.5rem;
+            height: 3.5rem;
             color: #fff;
             background-color: #FF6600;
             border-radius: 50% 50% 0 0;
+        }
+
+        #center {
+            font-size: 1rem;
         }
 
         #bingo td.check {
