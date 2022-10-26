@@ -36,9 +36,9 @@ def create_metadata(token_id, image, animation_url):
     data = {
         "token_id": token_id,
         # "image": f"ipfs://{image}/",
-        "image": f"https://bingo.yuk6ra.com/assets/bingo.png",
+        "image": f"https://bingo.yuk6ra.com/assets/bingo/bingo.png",
         # "animation_url": f"ipfs://{animation_url}/{token_id}.html",
-        "animation_url": f"https://bingo.yuk6ra.com/bingo/{token_id}.html",
+        "animation_url": f"https://bingo.yuk6ra.com/bingo_cards/{token_id}.html",
     }
 
     return data
