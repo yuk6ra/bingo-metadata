@@ -23,7 +23,7 @@ def main():
         output(metadata, token_id)
 
 def output(data, token_id):
-    template = open('../templates/template_bingo.json', 'r')
+    template = open('../templates/init/template_bingo.json', 'r')
 
     reader = string.Template(template.read())
     json = reader.safe_substitute(data)

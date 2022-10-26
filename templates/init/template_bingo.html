@@ -1,0 +1,116 @@
+<body>
+    <div class="main">
+        <div class="title">NFT BINGO</div>
+        <table id="bingo">
+            <tbody>
+                <tr>
+                    <td>$b0</td>
+                    <td>$i0</td>
+                    <td>$n0</td>
+                    <td>$g0</td>
+                    <td>$o0</td>
+                </tr>
+                <tr>
+                    <td>$b1</td>
+                    <td>$i1</td>
+                    <td>$n1</td>
+                    <td>$g1</td>
+                    <td>$o1</td>
+                </tr>
+                <tr>
+                    <td>$b2</td>
+                    <td>$i2</td>
+                    <td id="center">$n2</td>
+                    <td>$g2</td>
+                    <td>$o2</td>
+                </tr>
+                <tr>
+                    <td>$b3</td>
+                    <td>$i3</td>
+                    <td>$n3</td>
+                    <td>$g3</td>
+                    <td>$o3</td>
+                 </tr>
+                <tr>
+                    <td>$b4</td>
+                    <td>$i4</td>
+                    <td>$n4</td>
+                    <td>$g4</td>
+                    <td>$o4</td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+    <style type="text/css">
+        body{
+            background: #333631;
+        }
+
+        .main {
+            background: #333631;
+            margin: 2rem auto 0 auto;
+            width: 100%;
+        }
+
+        .title{
+            text-align: center;
+            font-size: 2rem;
+            margin: 0 auto;
+            color: white;
+            border-collapse: separate;
+            border-spacing: .7rem;
+        }
+
+        #bingo{
+            /*width: 25rem;*/
+            margin: 0 auto;
+            font-size: 1.5rem;
+            border-collapse: separate;
+            border-spacing: .7rem;
+        }
+
+        #bingo th,#bingo td {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        #bingo th{
+            color: #B78D4A;
+            background-color: #fff;
+            border: none;
+        }
+
+        #bingo td {
+            width: 3.5rem;
+            height: 3.5rem;
+            color: #fff;
+            background-color: #FF6600;
+            border-radius: 50% 50% 0 0;
+        }
+
+        #center {
+            font-size: 1rem;
+        }
+
+        #bingo td.check {
+            color: #FFBB00;
+            background-color: #663399;
+        }
+
+        #bingo td:hover {
+            cursor: hand;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#bingo td').click(function (){
+                $(this).toggleClass('check');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
