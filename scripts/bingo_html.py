@@ -4,7 +4,7 @@ import string
 
 
 MAIN_PATH = f'..'
-DATA_FOLDER_NAME = "bingo_html"
+DATA_FOLDER_NAME = "bingo_cards"
 
 SAVE_DATA_PATH = f'{MAIN_PATH}/{DATA_FOLDER_NAME}'
 
