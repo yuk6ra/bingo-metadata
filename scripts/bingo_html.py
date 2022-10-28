@@ -19,7 +19,7 @@ def main():
         output(data, token_id)
 
 def output(data, token_id):
-    template = open('../templates/init/template_bingo.html', 'r')
+    template = open('../templates/halloween/template_bingo.html', 'r')
 
     reader = string.Template(template.read())
     html = reader.safe_substitute(data)
